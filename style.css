@@ -23,6 +23,25 @@
 
 }
 
+.btn-1 {
+  padding: 12.5px 26px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #00FF88;
+  background-color: transparent;
+  border: solid 1px #00FF88;
+  margin-left: 20px;
+  transition: 400ms;
+  cursor: pointer;
+}
+
+.btn-1:hover {
+  color: #1A0B2E;
+  background-color: #00FF88;
+  transform: scale(.95);
+}
+
 .btn:hover {
   background: linear-gradient(-47deg, #F7E93F, #FB09B4, #9100F8);
   transform: scale(.95);
@@ -33,6 +52,7 @@
 header {
   background-color: #1a0b2e;
   width: 100%;
+  border-bottom: solid 1px #3e2363;
 }
 
 .header-section {
@@ -64,6 +84,76 @@ header {
   display: none;
 }
 
+/* Hero Banner section */
+.hero-section {
+  width: 100%;
+  background-image: url(./assets/hero-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  padding: 101px 0px;
+}
+
+.hero-continar {
+  text-align: center;
+  position: relative;
+  margin: auto;
+  display: block;
+  justify-items: center;
+  justify-content: center;
+}
+
+.img-box {
+  width: 350px;
+  background-image: url(./assets/hero-circle.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 350px;
+  height: 350px;
+  position: relative;
+}
+
+
+.mic-img {
+  position: absolute;
+  top: 90px;
+  left: 120px;
+}
+
+.btn-cricle {
+  color: #1A0B2E;
+  background-color: #00FF88;
+  border: none;
+  box-shadow: 0px 3px 27px 0px rgba(0, 255, 136, 0.5);
+  border-radius: 25px;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 8px 16px;
+  position: absolute;
+  right: 30px;
+  top: 20px;
+}
+
+.hero-content {
+  text-align: center;
+}
+
+.hero-content h2 {
+  font-size: 60px;
+  line-height: 73px;
+  font-weight: 800;
+}
+
+.hero-content p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  color: #d1cfd8;
+  padding: 8px 0px 24px 0px;
+}
+
+
 /* Large Device */
 
 /* Medium Device */
@@ -79,7 +169,7 @@ header {
     display: none;
   }
 
-  .btn {
+  .btn-box {
     display: none;
   }
 
@@ -88,4 +178,18 @@ header {
     width: 40px;
     cursor: pointer;
   }
+
+  .hero-section {
+    padding: 80px 0px;
+    height: 100vh;
+    background-size: cover;
+  }
+
+  .hero-content h2 {
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 800;
+    padding-top: 24px;
+  }
+
 }
