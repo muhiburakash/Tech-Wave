@@ -182,7 +182,7 @@ header {
   position: absolute;
   right: 30px;
   top: 20px;
-  animation: btn 2.5s ease-in-out infinite;
+  animation: btn 4s ease-in-out infinite;
 }
 
 .hero-content {
@@ -707,5 +707,28 @@ header {
     margin: 20px auto;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+  }
+
+  @keyframes btn {
+    0% {
+      right: 20px;
+      top: 10px;
+    }
+
+    50% {
+      right: 15px;
+      top: 05px
+    }
+
+    100% {
+      right: 20px;
+      top: 10px
+    }
+  }
+
+  .btn-cricle {
+    right: 20px;
+    top: 10px;
+    animation: btn 4s ease-in-out infinite;
   }
 }
