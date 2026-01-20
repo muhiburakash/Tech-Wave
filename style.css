@@ -10,6 +10,50 @@
   display: flex;
 }
 
+@keyframes animation {
+  0% {
+
+    box-shadow: 0 0 40px rgba(255, 55, 195, 0.6);
+  }
+
+  25% {
+
+    box-shadow: 0 0 50px rgba(148, 55, 255, 0.6);
+  }
+
+  50% {
+
+    box-shadow: 0 0 60px rgba(255, 252, 68, 0.6);
+  }
+
+  75% {
+
+    box-shadow: 0 0 50px rgba(74, 255, 68, 0.6);
+  }
+
+  100% {
+
+    box-shadow: 0 0 40px rgba(255, 55, 195, 0.6);
+  }
+}
+
+@keyframes btn {
+  0% {
+    right: 30px;
+    top: 20px;
+  }
+
+  50% {
+    right: 25px;
+    top: 15px
+  }
+
+  100% {
+    right: 30px;
+    top: 20px
+  }
+}
+
 .btn {
   padding: 12.5px 26px;
   border-radius: 25px;
@@ -114,6 +158,9 @@ header {
   background-size: 350px;
   height: 350px;
   position: relative;
+  animation: animation 5.5s ease-in-out infinite;
+  border-radius: 100%;
+  box-shadow: 0 0 40px rgba(255, 55, 195, 0.6);
 }
 
 
@@ -135,6 +182,7 @@ header {
   position: absolute;
   right: 30px;
   top: 20px;
+  animation: btn 2.5s ease-in-out infinite;
 }
 
 .hero-content {
@@ -537,6 +585,28 @@ header {
     background-size: cover;
   }
 
+  .img-box {
+    width: 200px;
+    background-image: url(./assets/hero-circle.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200px;
+    height: 200px;
+    position: relative;
+    animation: animation 5.5s ease-in-out infinite;
+    border-radius: 100%;
+    box-shadow: 0 0 40px rgba(255, 55, 195, 0.6);
+  }
+
+  .mic-img {
+    position: absolute;
+    top: 45px;
+    left: 60px;
+    width: 100%;
+    max-width: 80px;
+    height: auto;
+  }
+
   .hero-content h2 {
     font-size: 40px;
     line-height: 48px;
@@ -632,7 +702,7 @@ header {
 
   .social-box {
     display: grid;
-    width: 70%;
+    width: 90%;
     margin: 20px auto;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
